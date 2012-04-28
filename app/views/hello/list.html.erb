@@ -1,0 +1,20 @@
+<table border="1">
+  <tr>
+    <th>ISBNコード</th>
+    <th>書名</th>
+    <th>価格</th>
+    <th>出版社</th>
+    <th>刊行</th>
+    <th>cd-rom</th>
+  </tr>
+ <% @books.each do |book| %> 
+  <tr style="background-color:<%= cycle('#ffffff','#ffff99') %>">
+    <th><%= book.isbn %></th>
+    <th><%= book.title %></th>
+    <th><%= book.price %></th>
+    <th><%= book.publish %></th>
+    <th><%= book.published %></th>
+    <th><%= book.cd %></th>
+  </tr>
+ <% end %>
+</title>
